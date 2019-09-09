@@ -1,0 +1,37 @@
+id,movie_title,reviewer_name,rating
+1,Hobbs and Shaw,Melody,3
+2,Hobbs and Shaw,Vaibhav,1
+3,Hobbs and Shaw,Scott,4
+4,Hobbs and Shaw,Kwame,2
+5,Hobbs and Shaw,Brian,1
+6,Hobbs and Shaw,Teresa,3
+7,The Lion King,Melody,1
+8,The Lion King,Vaibhav,5
+9,The Lion King,Scott,5
+10,The Lion King,Kwame,3
+11,The Lion King,Brian,4
+12,The Lion King,Teresa,3
+13,Spiderman - Into the Spiderverse,Melody,1
+14,Spiderman - Into the Spiderverse,Vaibhav,3
+15,Spiderman - Into the Spiderverse,Scott,2
+16,Spiderman - Into the Spiderverse,Kwame,4
+17,Spiderman - Into the Spiderverse,Brian,3
+18,Spiderman - Into the Spiderverse,Teresa,4
+19,Glass,Melody,4
+20,Glass,Vaibhav,2
+21,Glass,Scott,5
+22,Glass,Kwame,5
+23,Glass,Brian,3
+24,Glass,Teresa,4
+25,The Lego Movie 2 - The Second Part,Melody,1
+26,The Lego Movie 2 - The Second Part,Vaibhav,3
+27,The Lego Movie 2 - The Second Part,Scott,4
+28,The Lego Movie 2 - The Second Part,Kwame,5
+29,The Lego Movie 2 - The Second Part,Brian,1
+30,The Lego Movie 2 - The Second Part,Teresa,4
+31,Shaft,Melody,5
+32,Shaft,Vaibhav,3
+33,Shaft,Scott,3
+34,Shaft,Kwame,5
+35,Shaft,Brian,3
+36,Shaft,Teresa,3

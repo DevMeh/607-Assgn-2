@@ -1,0 +1,55 @@
+---
+title: "Assignment 2"
+author: "Devanshu Mehrotra"
+date: "9/8/2019"
+output:
+  html_document:
+    df_print: paged
+Github: https://github.com/DevMeh/607-Assgn-2
+---
+##### The purpose of this file is to document steps taken for Assignment 2 of Data 607 #####
+
+***Step 1 - Created a local schema called 'Movies' in MYSQL Workbench***
+
+***Step 2 - Created a table called 'ratings' within the 'Movies' schema (see SQL code below)***
+
+_CREATE TABLE ratings_  
+    _id INT NOT NULL AUTO_INCREMENT,_    
+    _movie_title VARCHAR(255) NOT NULL,_    
+    _reviewer_name VARCHAR(255) NOT NULL,_    
+    _rating Int NULL,_    
+    _PRIMARY KEY (id) );_  
+    
+***Step 3 - Created a csv file (movies.csv) with the appropriate data and then imported the file using the MYSQL Workbench import function (see screenshots 1-3 for evidence)***
+
+***Step 4 - Set up a connection between Rstudio and MYSQL Database by first installing the RMySql Package which also downloaded the associated DBI package ***
+
+***Step 5 - Created a local connection called 'dbcon' between the Movies database and R studio. Note that due to manage connection errors due to updated encryption protocols, I had to create a new user(devin) with "Standard" encryption and give this user admin rights *** 
+
+```{r}
+dbcon <-  dbConnect(RMySQL::MySQL(), 
+                  dbname = 'Movies', 
+                  host = '127.0.0.1', 
+                  port = 3306,
+                  user ='devin',
+                  password ='') 
+```
+                    
+***Step 6 - In order to query the database and create an instance of the data within MYSQL used dbSendQuery***
+
+```{r}
+rs = dbSendQuery(dbcon, "select * from ratings")
+```
+
+***Step 7 - To create a dataframe, fetched the query result and passed it into a new dataframe called df***
+
+```{r}
+df = fetch(rs, n=-1)
+```
+
+***Step 8 - View the resulting dataframe***
+
+```{r}
+df
+```
+    
